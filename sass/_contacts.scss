@@ -1,6 +1,207 @@
-.section {
+.contacts {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: #84A178;
+
+}
+
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+    }
+}
+.contacts__title--hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.contacts__block {
+    max-width: 280px;
+    background-color: #FCFCFC;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @media screen and (min-width:480px) {
+        width: 280px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        padding-bottom: 40px;
+        padding-left: 24px;
+        padding-right: 24px
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 368px;
+    }
+}
+
+.contacts-category {
+  max-width: 80px;
+  height: 22px;
+  background-color: #F8D24E;
+  border-radius: 4px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width:768px) {
+    width: 73px;
+    height: 30px;
+    border-radius: 6px;
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__block-title {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #131313;
+    padding: 4px 22px;
+    text-transform: uppercase;
+
+    @media screen and (min-width:768px) {
+        font-size: 16px;
+        line-height: 1.37;
+        padding: 4px 13px;
+    }
+}
+
+.contacts__address-title {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: #131313;
+    margin-bottom: 8px;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+        line-height: 1.85;
+        margin-bottom: 12px;
+    }
+}
+
+.contacts__map-link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: #D6936D;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+        line-height: 1.85;
+    }
+}
+
+.contacts__address {
+    margin-bottom: 24px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.contacts__line {
+    max-width: 216px;
+    height: 0;
+    border: 1px solid #E1E1E1;
+    margin-bottom: 24px;
+
+    @media screen and (min-width:768px) {
+        width: 176px;
+        margin-bottom: 32px;
+    }
+}
+
+.contacts__schedule-item {
+    margin-bottom: 8px;
+}
+
+.contacts__schedule-item:last-child {
+    margin-bottom: 0;
+}
+
+.contacts__schedule-days {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    color: #131313;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+        line-height: 1.85;
+    }
+}
+
+.contacts__schedule-time {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    color: #ABABAB;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+        line-height: 1.85;
+    }
+}
+
+.contacts__schedule {
+    margin-bottom: 24px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.contacts__phone-mail-item {
+    margin-bottom: 6px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 4px;
+    }
+}
+
+.contacts__phone-mail-item:last-child {
+    margin-bottom: 0;
+}
+
+.contacts__phone-mail-link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: #131313;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+        line-height: 1.85;
+    }
 }
