@@ -52,10 +52,6 @@ img {
 }
 
 .contacts {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #84A178;
 }
 
@@ -64,10 +60,16 @@ img {
   flex-direction: column;
   gap: 16px;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .contacts__container {
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__container {
+    gap: 32px;
   }
 }
 
@@ -93,16 +95,18 @@ img {
   padding-top: 40px;
   padding-bottom: 24px;
   padding-left: 32px;
-  padding-right: 32px;
 }
 @media screen and (min-width: 480px) {
   .contacts__block {
     width: 280px;
+    height: 412px;
   }
 }
 @media screen and (min-width: 768px) {
   .contacts__block {
     width: 224px;
+    max-width: 224px;
+    height: 537px;
     padding-bottom: 40px;
     padding-left: 24px;
     padding-right: 24px;
@@ -111,6 +115,9 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__block {
     width: 368px;
+    max-width: 368px;
+    height: 542px;
+    padding: 40px 40px;
   }
 }
 
@@ -127,6 +134,11 @@ img {
     height: 30px;
     border-radius: 6px;
     margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-category {
+    width: 76px;
   }
 }
 
@@ -165,6 +177,13 @@ img {
     margin-bottom: 12px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__address-title {
+    font-size: 16px;
+    line-height: 1.87;
+    margin-bottom: 8px;
+  }
+}
 
 .contacts__map-link {
   font-family: "Montserrat";
@@ -178,6 +197,12 @@ img {
   .contacts__map-link {
     font-size: 14px;
     line-height: 1.85;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__map-link {
+    font-size: 16px;
+    line-height: 1.87;
   }
 }
 
@@ -202,9 +227,19 @@ img {
     margin-bottom: 32px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__line {
+    width: 288px;
+  }
+}
 
 .contacts__schedule-item {
   margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__schedule-item {
+    margin-bottom: 12px;
+  }
 }
 
 .contacts__schedule-item:last-child {
@@ -224,6 +259,12 @@ img {
     line-height: 1.85;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__schedule-days {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
 
 .contacts__schedule-time {
   font-family: "Montserrat";
@@ -236,6 +277,12 @@ img {
   .contacts__schedule-time {
     font-size: 14px;
     line-height: 1.85;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__schedule-time {
+    font-size: 16px;
+    line-height: 1.87;
   }
 }
 
@@ -272,5 +319,11 @@ img {
   .contacts__phone-mail-link {
     font-size: 14px;
     line-height: 1.85;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__phone-mail-link {
+    font-size: 16px;
+    line-height: 1.87;
   }
 }/*# sourceMappingURL=main.css.map */
