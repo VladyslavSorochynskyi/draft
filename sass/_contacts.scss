@@ -17,6 +17,8 @@
         gap: 32px;
     }
 }
+
+
 .contacts__title--hidden {
     position: absolute;
     width: 1px;
@@ -38,13 +40,14 @@
     padding-top: 40px;
     padding-bottom: 24px;
     padding-left: 32px;
+    padding-right: 32px;
 
     @media screen and (min-width:480px) {
         width: 280px;
         height: 412px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width:1199px) {
         width: 224px;
         max-width: 224px;
         height: 537px;
@@ -55,13 +58,12 @@
 
     @media screen and (min-width:1200px) {
         width: 368px;
-        max-width: 368px;
         height: 542px;
-        padding: 40px 40px;
+        padding: 40px;
     }
 }
 
-.contacts-category {
+.contacts__category {
   max-width: 80px;
   height: 22px;
   background-color: #F8D24E;
@@ -78,6 +80,10 @@
   @media screen and (min-width:1200px) {
     width: 76px;
   }
+}
+
+.contacts__category--foodtruck {
+    max-width: 130px;
 }
 
 .contacts__block-title {
@@ -127,6 +133,7 @@
     line-height: 1.83;
     letter-spacing: 0.04em;
     color: #D6936D;
+    height: 40px;
 
     @media screen and (min-width:768px) {
         font-size: 14px;
