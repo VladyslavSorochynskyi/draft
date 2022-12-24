@@ -11,17 +11,16 @@
 
 .contacts__card-item {
     max-width: 280px;
-    height: 412px;
     background-color: var(--text-color-primary);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding-top: 40px;
-    padding-bottom: 24px;
     padding-left: 32px;
     padding-right: 32px;
 
         @media screen and (min-width:480px) {
             width: 280px;
+            height: 412px;
         }
 
         @media screen and (min-width: 768px) and (max-width:1199px) {
@@ -113,20 +112,12 @@
     }
 }
 
-.contacts__1-address {
+.contacts__address {
     max-width: 190px;
     max-height: 40px;
 }
 
-.contacts__2-address {
-    max-width: 212px;
-    max-height: 40px;
-}
 
-.contacts__3-address {
-    max-width: 190px;
-    max-height: 40px;
-}
 
 .contacts_map {
     font-weight: 500;
